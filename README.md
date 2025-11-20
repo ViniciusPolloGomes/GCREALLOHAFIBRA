@@ -85,7 +85,7 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 # 🗂 Estrutura do Projeto - SSR com Supabase 
 
 
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 6rem;">
+<div style="display: flex;  align-items: flex-start; gap:30px";">
   <img width="30%" height="30%" alt="image" src="https://github.com/user-attachments/assets/31cc38f3-87bb-49c4-98e6-57534ee1370c" />
   <img width="30%" height="30%" alt="image" src="https://github.com/user-attachments/assets/bde77c38-1d85-48dc-8787-839c848a0cd0" />
 

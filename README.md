@@ -84,7 +84,9 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 
 # 🗂 Estrutura do Projeto - SSR com Supabase e Chakra UI
 
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a81048d1-f3cc-4156-864e-fd89ba0f0369" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/bde77c38-1d85-48dc-8787-839c848a0cd0" />
+
+
 ---
 ---
 

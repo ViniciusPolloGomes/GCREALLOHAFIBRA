@@ -84,32 +84,7 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 
 # 🗂 Estrutura do Projeto - SSR com Supabase e Chakra UI
 
-
-src/
-├── app/
-│-----└── (auth)/
-│-----------└── login/
-│-----------------├── page.tsx
-│-----------------└── actions.ts
-├── domain/
-│--└── auth/
-│--------├── auth-repository.ts
-│--------└── usecases/
-│--------------├── login.ts
-│--------------├── logout.ts
-│--------------└── get-user.ts
-├── services/
-│---└── supabase/
-│---│-----├── client/
-│---│-----└── server.ts
-│---└── auth/
-│---------└── supabase-auth-repository.ts
-├── components/
-│----└── Header.tsx
-├── styles/
-│----└── theme.ts
-└── pages/
- -----└── _app.tsx
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a81048d1-f3cc-4156-864e-fd89ba0f0369" />
 ---
 ---
 

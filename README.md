@@ -8,64 +8,74 @@ NEXT.JS
 AXIOS
 
 SUPABASE
-🔥 O que é o Supabase Realtime
+# ⚡ Recursos Realtime do Supabase
 
-É um serviço que:
+- ✔ Escuta alterações no banco de dados  
+- ✔ Envia eventos em tempo real para sua aplicação (via WebSocket)  
+- ✔ Permite canais personalizados  
+- ✔ Suporta presenças (quem está online)  
+- ✔ Suporta broadcast entre clientes  
+- ✔ Funciona 100% serverless  
+- ✔ Não exige Redis, Socket.IO ou configuração manual  
 
-✔ Escuta alterações no banco de dados
-✔ Envia eventos em tempo real para sua aplicação (via WebSocket)
-✔ Permite canais personalizados
-✔ Suporta presenças (quem está online)
-✔ Suporta broadcast entre clientes
-✔ Funciona 100% serverless
-✔ Não exige Redis, Socket.IO ou configuração manual
+---
 
-Ele é excelente para sistemas como:
+# 🏗 Sistemas ideais para Supabase Realtime
 
-dashboards em tempo real
-sistemas de tickets / helpdesk
-chats
-monitoramento
-notificações instantâneas
-Você terá:
+- 📊 Dashboards em tempo real  
+- 🎫 Sistemas de tickets / helpdesk  
+- 💬 Chats  
+- 📈 Monitoramento  
+- 🔔 Notificações instantâneas  
 
-autenticação
-acesso ao banco
-realtime
-SSR/Server Components
-RLS seguro
-persistência de sessão
+---
 
-Exatamente. Você pode usar APENAS o Supabase, porque:
+# 🔑 Funcionalidades disponíveis
 
-✅ Supabase JÁ inclui um PostgreSQL completo.
+- 🛡 Autenticação  
+- 🔗 Acesso ao banco  
+- ⚡ Realtime  
+- 🖥 SSR / Server Components  
+- 🔒 RLS seguro  
+- 💾 Persistência de sessão  
 
-Ou seja:
+---
 
-Você não precisa instalar PostgreSQL separado
-Você não precisa configurar servidor de banco
-Você não precisa pagar nada extra por um Postgres externo
-Você não precisa escolher entre Supabase e PostgreSQL
-Ao usar o Supabase, você já está usando PostgreSQL (mesmo banco, mesma linguagem SQL)
-O Supabase é basicamente:
+# ✅ Por que usar apenas Supabase
 
-🟦 PostgreSQL + um monte de recursos prontos
+- Supabase já inclui um PostgreSQL completo  
+- Você não precisa instalar PostgreSQL separado  
+- Você não precisa configurar servidor de banco  
+- Você não precisa pagar nada extra por um Postgres externo  
+- Não precisa escolher entre Supabase e PostgreSQL  
 
-✔ PostgreSQL rodando 100% real
-✔ Dashboard
-✔ Realtime
-✔ Auth
-✔ Storage
-✔ API REST
-✔ API GraphQL
-✔ Edge Functions
-✔ Backups
-✔ Logs
+> Ao usar o Supabase, você já está usando PostgreSQL (mesmo banco, mesma linguagem SQL)  
 
-🧠 Pense assim:
-➡ PostgreSQL é o motor.
-➡ Supabase é o carro inteiro pronto pra dirigir
+---
 
+# 🟦 Supabase é basicamente
+
+- PostgreSQL + um monte de recursos prontos
+
+### Principais recursos:
+
+- ✔ PostgreSQL rodando 100% real  
+- ✔ Dashboard  
+- ✔ Realtime  
+- ✔ Auth  
+- ✔ Storage  
+- ✔ API REST  
+- ✔ API GraphQL  
+- ✔ Edge Functions  
+- ✔ Backups  
+- ✔ Logs  
+
+---
+
+# 🧠 Pense assim
+
+- ➡ PostgreSQL é o motor  
+- ➡ Supabase é o carro inteiro pronto pra dirigir
 # Next.js 16 SSR + Supabase 2.x Authentication (Clean Architecture)
 
 Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando **Server-Side Rendering (SSR)**, seguindo princípios de **Clean Architecture**.
@@ -100,7 +110,6 @@ src/
  │   └─ theme.ts
  └─ pages/
       └─ _app.tsx
-
 ---
 ---
 

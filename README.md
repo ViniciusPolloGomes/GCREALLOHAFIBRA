@@ -86,30 +86,30 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 
 
 src/
- ├─ app/
- │   └─ (auth)/
- │        └─ login/
- │             ├─ page.tsx
- │             └─ actions.ts
- ├─ domain/
- │   └─ auth/
- │       ├─ auth-repository.ts
- │       └─ usecases/
- │            ├─ login.ts
- │            ├─ logout.ts
- │            └─ get-user.ts
- ├─ services/
- │   └─ supabase/
- │        ├─ client/
- │        │     └─ server.ts
- │        └─ auth/
- │              └─ supabase-auth-repository.ts
- ├─ components/
- │   └─ Header.tsx
- ├─ styles/
- │   └─ theme.ts
- └─ pages/
-      └─ _app.tsx
+├── app/
+│-----└── (auth)/
+│-----------└── login/
+│-----------------├── page.tsx
+│-----------------└── actions.ts
+├── domain/
+│--└── auth/
+│--------├── auth-repository.ts
+│--------└── usecases/
+│--------------├── login.ts
+│--------------├── logout.ts
+│--------------└── get-user.ts
+├── services/
+│---└── supabase/
+│---│-----├── client/
+│---│-----└── server.ts
+│---└── auth/
+│---------└── supabase-auth-repository.ts
+├── components/
+│----└── Header.tsx
+├── styles/
+│----└── theme.ts
+└── pages/
+ -----└── _app.tsx
 ---
 ---
 

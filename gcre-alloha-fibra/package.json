@@ -9,10 +9,22 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@auth/supabase-adapter": "^1.11.1",
+    "@chakra-ui/cli": "^3.29.0",
+    "@chakra-ui/react": "^3.29.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.84.0",
+    "add": "^2.0.6",
+    "axios": "^1.13.2",
+    "framer-motion": "^12.23.24",
     "next": "^16.0.3",
     "next-auth": "^4.24.13",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "snippet": "^0.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

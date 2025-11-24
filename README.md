@@ -195,56 +195,54 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 
 ## Fluxo resumido visual
 
-+------------------+ onSubmit +--------------------+
+onSubmit 
+
 | Login Page | ------------------> | handleSubmit (Client)
 | (page.tsx) | | Captura FormData
-+------------------+ +--------------------+
 |
 v
-+--------------------+
+
 | loginAction |
 | (Server Action) |
 | Recebe FormData |
-+--------------------+
+|
 |
 v
-+--------------------+
 | LoginUseCase |
 | (Domain / UseCase) |
 | Executa regra de |
 | negócio |
-+--------------------+
+|
 |
 v
-+-----------------------------+
+|
 | SupabaseAuthRepository |
 | (Service Layer / Repository)|
 | Chama createSupabaseServer |
 | e executa auth.signIn |
-+-----------------------------+
+|
 |
 v
-+--------------------+
+|
 | createSupabaseServer|
 | (Supabase Client SSR)|
 | Configura cookies |
-+--------------------+
+|
 |
 v
-+--------------------+
+|
 | Supabase Auth API |
 | signInWithPassword |
-+--------------------+
 |
 user / error
 |
+|
 v
-+--------------------+
 | handleSubmit (Client)|
 | Atualiza estado UI |
 | Redireciona / mostra|
 | erros |
-+--------------------+
+
 
 
 

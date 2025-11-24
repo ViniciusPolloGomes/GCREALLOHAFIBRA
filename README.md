@@ -195,54 +195,60 @@ Este projeto implementa autenticação com **Supabase** no **Next.js 16** usando
 
 ## Fluxo resumido visual
 
-onSubmit 
+## 🔐 Fluxo de Autenticação SSR (Server-Side Rendering)
 
-| Login Page | ------------------> | handleSubmit (Client)
-| (page.tsx) | | Captura FormData
-|
-v
+Fluxo resumido do login utilizando Supabase, Server Actions, Clean Architecture e SSR:
 
-| loginAction |
-| (Server Action) |
-| Recebe FormData |
-|
-|
-v
-| LoginUseCase |
-| (Domain / UseCase) |
-| Executa regra de |
-| negócio |
-|
-|
-v
-|
-| SupabaseAuthRepository |
-| (Service Layer / Repository)|
-| Chama createSupabaseServer |
-| e executa auth.signIn |
-|
-|
-v
-|
-| createSupabaseServer|
-| (Supabase Client SSR)|
-| Configura cookies |
-|
-|
-v
-|
-| Supabase Auth API |
-| signInWithPassword |
-|
-user / error
-|
-|
-v
-| handleSubmit (Client)|
-| Atualiza estado UI |
-| Redireciona / mostra|
-| erros |
+1. **Login Page (Client)**
+   - Usuário preenche o formulário
+   - Evento `onSubmit` é disparado
 
+   ⬇️
+
+2. **handleSubmit — Client**
+   - Localizado no `page.tsx`
+   - Captura `FormData`
+   - Chama `loginAction`
+
+   ⬇️
+
+3. **loginAction — Server Action**
+   - Recebe `FormData`
+   - Converte, valida e envia ao caso de uso `LoginUseCase`
+
+   ⬇️
+
+4. **LoginUseCase — Domain**
+   - Aplica regras de negócio
+   - Depende da abstração `AuthRepository`
+   - Dispara `repository.login(email, password)`
+
+   ⬇️
+
+5. **SupabaseAuthRepository — Service / Infra**
+   - Implementação concreta do repositório
+   - Cria cliente via `createSupabaseServer()`
+   - Executa `auth.signInWithPassword`
+
+   ⬇️
+
+6. **createSupabaseServer — SSR Supabase Client**
+   - Configura cookies HTTP-only
+   - Garante execução no servidor
+   - Conecta com Supabase Auth API
+
+   ⬇️
+
+7. **Supabase Auth API**
+   - Executa autenticação
+   - Retorna `user` ou `error`
+
+   ⬇️
+
+8. **handleSubmit — Client**
+   - Recebe resultado da Server Action
+   - Atualiza UI (loading, error, success)
+   - Redireciona para rota autenticada ou exibe mensagem de erro
 
 
 

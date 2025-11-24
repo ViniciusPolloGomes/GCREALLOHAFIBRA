@@ -251,6 +251,7 @@ Fluxo resumido do login utilizando Supabase, Server Actions, Clean Architecture 
    - Redireciona para rota autenticada ou exibe mensagem de erro
 
 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/31193246-d705-4b33-86da-179c8fd4ef1f" />
 
 ---
 
